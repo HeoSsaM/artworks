@@ -164,6 +164,10 @@ section h1,
     letter-spacing: 3px
 }
 
+.no-image[hidden] {
+    display: none;
+}
+
 .art-info {
     padding: 18px
 }
@@ -240,6 +244,15 @@ label {
     width: 100%;
     max-height: 570px;
     object-fit: cover
+}
+
+.detail-placeholder {
+    min-height: 320px;
+}
+
+.detail-description {
+    margin: 24px 0;
+    white-space: pre-wrap;
 }
 
 .order-row {
@@ -371,6 +384,10 @@ label {
 
 @media (max-width: 768px) {
     .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-grid {
         grid-template-columns: 1fr;
     }
 
